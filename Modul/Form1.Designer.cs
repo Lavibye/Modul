@@ -38,6 +38,8 @@
             this.WaterArea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TemperatureWater = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TemperatureAir = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReadButton = new System.Windows.Forms.Button();
+            this.WriteDataButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +86,7 @@
             // aviariesListBox
             // 
             this.aviariesListBox.FormattingEnabled = true;
-            this.aviariesListBox.Location = new System.Drawing.Point(321, 324);
+            this.aviariesListBox.Location = new System.Drawing.Point(174, 334);
             this.aviariesListBox.Name = "aviariesListBox";
             this.aviariesListBox.Size = new System.Drawing.Size(271, 134);
             this.aviariesListBox.TabIndex = 5;
@@ -114,12 +116,32 @@
             this.TemperatureAir.HeaderText = "Температури на суші";
             this.TemperatureAir.Name = "TemperatureAir";
             // 
+            // ReadButton
+            // 
+            this.ReadButton.Location = new System.Drawing.Point(36, 249);
+            this.ReadButton.Name = "ReadButton";
+            this.ReadButton.Size = new System.Drawing.Size(111, 23);
+            this.ReadButton.TabIndex = 6;
+            this.ReadButton.Text = "Read File";
+            this.ReadButton.UseVisualStyleBackColor = true;
+            // 
+            // WriteDataButton
+            // 
+            this.WriteDataButton.Location = new System.Drawing.Point(36, 292);
+            this.WriteDataButton.Name = "WriteDataButton";
+            this.WriteDataButton.Size = new System.Drawing.Size(111, 23);
+            this.WriteDataButton.TabIndex = 7;
+            this.WriteDataButton.Text = "Write File";
+            this.WriteDataButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(876, 520);
+            this.Controls.Add(this.WriteDataButton);
+            this.Controls.Add(this.ReadButton);
             this.Controls.Add(this.aviariesListBox);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.birdNameTextBox);
@@ -145,6 +167,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn WaterArea;
         private System.Windows.Forms.DataGridViewTextBoxColumn TemperatureWater;
         private System.Windows.Forms.DataGridViewTextBoxColumn TemperatureAir;
+        private System.Windows.Forms.Button ReadButton;
+        private System.Windows.Forms.Button WriteDataButton;
     }
 }
 
